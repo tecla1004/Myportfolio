@@ -1,10 +1,14 @@
+import classNames from 'classnames';
 import React from 'react';
 
-const Button = () => {
+const Button = ({txtColor, bgColor}) => {
     return (
-        <div>
-            button
-        </div>
+        <button className={classNames(
+            
+            txtColor, bgColor,
+        )}>
+            Explore Projects
+        </button>
     );
 }
 

@@ -1,13 +1,23 @@
 import Image from 'next/image';
 import React from 'react';
-
-const MainJumbotron = () => {
+import classNames from 'classnames';
+import Button from '../commons/button/Button';
+const MainJumbotron = ({txtColor}) => {
     return (
         <div>
             <div>
-                <h2>Hi, there</h2>
-                <h2>I'm Hyewon</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nullam consectetur tristique enim, sit.</p>
+                <h3 className='text-4xl'>Hi, there</h3>
+                <h3 className='text-4xl'>I'm Hyewon</h3>
+                <h2 className={classNames(
+                    'text-6xl my-3',
+                    txtColor==="text-descGray"
+                )}>FRONTEND DEVELOPER</h2>
+                <p 
+                className={classNames(
+                    'w-1/3 text-xl text-descGray',
+                     
+                )}
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nullam consectetur tristique enim, sit.</p>
             </div>
             <div>
                 <div></div>
@@ -16,6 +26,7 @@ const MainJumbotron = () => {
                     <Image />
                 </div>
             </div>
+            <Button txtColor="text-white" bgColor='bg-primaryGra' />
         </div>
     );
 }

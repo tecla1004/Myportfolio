@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import Nav from '../components/Nav';
+import Nav from '../components/header/Nav';
 import MainJumbotron from '../components/main/MainJumbotron';
 
 
 export default function HomePage() {
   
   return (
-    <div>
-      <Nav />
+    <div className='w-full  bg-primary'>
+      <div className="mx-36 m-auto border-2">
+        <Nav />
 
-      <MainJumbotron />
+        <MainJumbotron txtColor="text-white" />
+      </div>
     </div>
   );
 }
