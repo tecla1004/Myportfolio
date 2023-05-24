@@ -9,20 +9,25 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
-    backgroundColor:{
-      'primary':'#19191F'
+    extend: {
+      colors:{
+        'white':"#ffffff",
+        'gray':"#DFD8D8",
+        'gradient':"#165EC8",
+        // 'gradient':"linear-gradient(90deg, rgba(31,162,255,1), rgba(18,216,250,1), rgba(166,255,203,1))",
+        },
+      backgroundColor:{
+          'primary':'#19191F'
+        },
+      screens:{
+          sm:"740px",
+          md:"920px",
+          lg:"1024px",
+        },
     },
-    screens:{
-      sm:"740px",
-      md:"920px",
-      lg:"1024px",
-    },
-    color:{
-      white:"#ffffff",
-      descGray:"#DFD8D8",
-      primaryGra:"linear-gradient(90deg, rgba(31,162,255,1), rgba(18,216,250,1), rgba(166,255,203,1))",
-      },
+   
+   
+   
   plugins: [],
 }
 
