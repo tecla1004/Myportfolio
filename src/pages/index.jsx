@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Nav from '../components/header/Nav';
 import MainJumbotron from '../components/main/MainJumbotron';
 import Cards from '../components/projects/cards';
+import About from '../components/aboutMe/About';
 
 
 export default function HomePage() {
@@ -15,12 +16,13 @@ export default function HomePage() {
   ]
 
   return (
-    <div className='w-full'>
-      <div className="mx-36 m-auto border-2">
+    <div className='w-full bg-primary text-white'>
+      <div className="mx-36 m-auto">
         <Nav />
 
-        <MainJumbotron txtColor="text-white" />
+        <MainJumbotron txtColor="text-white" backgroundColor='bg-gradient' />
         <Cards projectsData={projectsData} />
+        <About backgroundColor='bg-gradient' />
       </div>
     </div>
   );
