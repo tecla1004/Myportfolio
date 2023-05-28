@@ -28,8 +28,8 @@ const MainJumbotron = ({txtColor, backgroundColor}) => {
             </div>
             <div>
                 <Box backgroundColor={backgroundColor} width="[155px]" height="[155px]" rotate="rotate-45" right="1/3" top="40" position="absolute" />
-                <Box width="[155px]" height="[155px]" borderColor="border-white" rotate="rotate-45" right="1/3" top="52" position="absolute" />
-                <Box width="[300px]" height="[300px]" borderColor="border-white" rotate="-rotate-12" right="1/4" top="80" position="absolute" />
+                <Box width="[155px]" height="[155px]" borderColor="border-white" rotate="rotate-45" right="1/3" top="52" position="absolute" border="border-2" />
+                <Box width="[300px]" height="[300px]" borderColor="border-white" rotate="-rotate-12" right="1/4" top="80" position="absolute" border="border-2" />
                 <div>
                     <Image
                     src={portrait}
