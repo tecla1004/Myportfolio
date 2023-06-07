@@ -14,11 +14,15 @@ module.exports = {
         'white':"#ffffff",
         'gray':"#DFD8D8",
         'gradient':"#165EC8",
-        
+        'gradientBtn':"linear-gradient(",
+        'puple':'#c965f5',
+        'darkblue':"#7c7cec",
+        'skyblue':'#1fa2ff'
         },
+      
       backgroundColor:{
           'primary':'#19191F',
-          'gradientBtn':"rgb(201,101,245)",
+          // 'gradientBtn':"rgb(201,101,245)",
         },
       screens:{
           sm:"740px",

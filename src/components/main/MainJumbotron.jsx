@@ -6,12 +6,13 @@ import Box from '../commons/Box';
 import portrait from '../../images/portrait.jpg'
 
 
-const MainJumbotron = ({txtColor, backgroundColor}) => {
+const MainJumbotron = ({txtColor, backgroundColor, descColor}) => {
     return (
-        <div className='relative pb-96 pt-32'>
+        <div className='relative pb-80 pt-32'>
             <div>
-                <h3 className='text-4xl text-gradient'>Hi, there</h3>
-                <h3 className='text-4xl text-gradient'>I'm Hyewon</h3>
+                <h3 className='text-4xl inline-block text-transparent bg-clip-text bg-gradient-to-r from-puple via-darkblue to-skyblue'>Hi, there</h3>
+                <br></br>
+                <h3 className='text-4xl inline-block text-transparent bg-clip-text bg-gradient-to-r from-puple via-darkblue to-skyblue'>I'm Hyewon</h3>
                 <h2 className={classNames(
                     'text-6xl my-3',
                     txtColor==="text-gray"
@@ -19,17 +20,17 @@ const MainJumbotron = ({txtColor, backgroundColor}) => {
                 <p 
                 className={classNames(
                     'w-1/3 text-xl text-descGray descFont',
-                     
+                    descColor
                 )}
                 >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nullam consectetur tristique enim, sit.</p>
             </div>
             <div className='my-12'>
-                <Button txtColor="text-white" label='Explore projects' />
+                <Button txtColor="text-black" label='Explore projects' />
             </div>
             <div>
-                <Box backgroundColor={backgroundColor} width="[155px]" height="[155px]" rotate="rotate-45" right="1/3" top="40" position="absolute" />
-                <Box width="[155px]" height="[155px]" borderColor="border-white" rotate="rotate-45" right="1/3" top="52" position="absolute" border="border-2" />
-                <Box width="[300px]" height="[300px]" borderColor="border-white" rotate="-rotate-12" right="1/4" top="80" position="absolute" border="border-2" />
+                <Box backgroundColor={backgroundColor} width="w-[155px]" height="h-[155px]" rotate="rotate-45" right="right-1/3" top="top-40" position="absolute" />
+                <Box width="w-[155px]" height="h-[155px]" borderColor="border-white" rotate="rotate-45" right="right-1/3" top="top-52" position="absolute" border="border-2" />
+                <Box width="w-[300px]" height="h-[300px]" borderColor="border-white" rotate="-rotate-12" right="right-1/4" top="top-80" position="absolute" border="border-2" />
                 <div>
                     <Image
                     src={portrait}

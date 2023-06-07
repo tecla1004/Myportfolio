@@ -9,35 +9,15 @@ import Contact from '../components/contact/Contact';
 export default function HomePage() {
   
   const projectsData = [
-    {imgUrl:require("../images/sample.png"), title:'Responsive Web Application', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nulla'},
-    {imgUrl:require("../images/sample.png"), title:'Responsive Web Application', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nulla'},
-    {imgUrl:require("../images/sample.png"), title:'Responsive Web Application', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nulla'},
-    {imgUrl:require("../images/sample.png"), title:'Responsive Web Application', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nulla'},
+    {imgUrl:require("../images/sample.png"), title:'Responsive PWA', desc:'Ordering leftover food and reducing food waste', tech:"Vanila JavaScript, Sass, Firebase, HTML"},
+    {imgUrl:require("../images/sample.png"), title:'B2B SPA', desc:'Employee engagement application that provides survey and reports', tech:"React, MongoDB, Firebase, AWS, Node.js, Express.js, Tailwind"},
+    {imgUrl:require("../images/splink.png"), title:'iOS Mobile Application', desc:'Builidng community as shopping bulk products with neibours and split bills', tech:"Reac Native, MongoDB, Firebase, AWS, Node.js, Express.js, Tailwind"},
+    // {imgUrl:require("../images/sample.png"), title:'Responsive Web Application', desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et massa vel quam accumsan elementum. Nulla'},
 
   ]
 
   const histories = [
-    {year: 2016, 
-    jobTitle:"Computer system manager", 
-    jobDesc:"Managed and maintained homepage updating regularly using computer language such a HTML and CSS", 
-    jobDesc2:"Designed banners to effectively inform to users for homepage and SNS",
-    jobDesc3:"Managed over 20,000 membership’s demographic data safely by using MySQL",
-    jobDesc4:"Handled complaints effectively through emails and calls from customers"
-    },
-    {year: 2022, 
-      jobTitle:"Computer system manager", 
-      jobDesc:"Managed and maintained homepage updating regularly using computer language such a HTML and CSS", 
-      jobDesc2:"Designed banners to effectively inform to users for homepage and SNS",
-      jobDesc3:"Managed over 20,000 membership’s demographic data safely by using MySQL",
-      jobDesc4:"Handled complaints effectively through emails and calls from customers"
-      },
-    {year: 2023, 
-      jobTitle:"Computer system manager", 
-      jobDesc:"Managed and maintained homepage updating regularly using computer language such a HTML and CSS", 
-      jobDesc2:"Designed banners to effectively inform to users for homepage and SNS",
-      jobDesc3:"Managed over 20,000 membership’s demographic data safely by using MySQL",
-      jobDesc4:"Handled complaints effectively through emails and calls from customers"
-      },
+    "ReactJS", "JavaScript", "CSS", "Tailwind", "Html", "MongoDB", "Expres.js", "Node.js"
   ]
 
   return (
@@ -45,9 +25,10 @@ export default function HomePage() {
       <div className="mx-36 m-auto">
         <Nav />
 
-        <MainJumbotron txtColor="text-white" backgroundColor='bg-gradient' />
+        <MainJumbotron txtColor="text-white" descColor="text-gray" backgroundColor='bg-gradient-to-r from-puple via-darkblue to-skyblue' />
+        <About backgroundColor="bg-gradient-to-r from-puple via-darkblue to-skyblue" histories={histories} />
         <Cards projectsData={projectsData} />
-        <About backgroundColor='bg-gradient' histories={histories} />
+       
         <Contact />
       </div>
     </div>
