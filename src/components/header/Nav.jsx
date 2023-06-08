@@ -7,7 +7,7 @@ import mail from "../../icons/envelope.svg"
 
 const Nav = () => {
     return (
-        <div className='flex ml-96 jus'>
+        <div className='flex ml-96 justify-end pt-9'>
             <h3 className='w-1/5 text-xl'>Project</h3>
             <h3 className='w-1/5 text-xl' >About me</h3>
             <div className='w-1/5 flex gap-4' >
