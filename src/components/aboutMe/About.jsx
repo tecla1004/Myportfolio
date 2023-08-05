@@ -7,14 +7,14 @@ const About = ({backgroundColor, histories, descColor}) => {
             <h3 className='text-4xl mb-10'>About me</h3>
             <p className='descFont'>Hey there! I'm a friendly and enthusiastic Frontend Developer who is deeply passionate about learning and growth. I have a solid foundation in HTML, CSS, and JavaScript, and I'm constantly seeking new opportunities to expand my knowledge and skill set in the ever-evolving world of web development. Creating visually appealing and user-friendly web interfaces is not just a job for me, it's a true passion that fuels my desire to deliver outstanding results.
             </p>
-            <h5 className='text-xl py-10'>Skills </h5>
+            <h5 className='text-3xl py-10'>Skills </h5>
             <div>
                     <div className='grid grid-cols-4 gab-4'>
                     {histories.map((history, index) =>(
                         <div>                                {/* <Box width={6} height={6} backgroundColor={backgroundColor} /> */}
                             <div className='flex py-3'>
                                 <Box round="rounded-full" width="w-4" height="h-4" backgroundColor={backgroundColor} />
-                                <p className='pl-3'>{history}</p>
+                                <p className='pl-3 descFont'>{history}</p>
                             </div>
                         </div>  
                     ))}
