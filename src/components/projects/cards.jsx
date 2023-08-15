@@ -2,11 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 import Button from '../commons/button/Button';
 import Link from 'next/link';
-const Cards = ({projectsData, font }) => {
+const Cards = ({projectsData, ref }) => {
 
    
     return (
-        <div>
+        <div ref={ref}>
             <h3 className='text-4xl mb-20'>Projects</h3>
             <div className='grid grid-cols-3 gap-8 pb-72'>
                 {projectsData.map((data, index)=>(

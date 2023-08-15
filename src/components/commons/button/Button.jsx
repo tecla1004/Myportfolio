@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-const Button = ({txtColor, bgColor, label, padding, txtSize, }) => {
+const Button = ({txtColor, onClick, label, padding, txtSize, }) => {
     return (
         <div>
             <button className={classNames(
@@ -9,7 +9,7 @@ const Button = ({txtColor, bgColor, label, padding, txtSize, }) => {
                 txtColor,
                 txtSize,
                 
-            )}>
+            )} onClick={onClick}>
                 {label}
             </button>
         </div>
