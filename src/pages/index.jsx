@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Nav from '../components/header/Nav';
 import MainJumbotron from '../components/main/MainJumbotron';
 import Cards from '../components/projects/cards';
@@ -8,6 +8,10 @@ import Contact from '../components/contact/Contact';
 
 export default function HomePage() {
   
+  
+
+  
+
   const projectsData = [
     {imgUrl:require("../images/home.png"), title:'Responsive PWA', desc:'Ordering leftover food and reducing food waste', tech:"Vanila JavaScript, Sass, Firebase, HTML"},
     {imgUrl:require("../images/sample.png"), title:'B2B SPA', desc:'Employee engagement application that provides survey and reports', tech:"React, MongoDB, Firebase, AWS, Node.js, Express.js, Tailwind"},
