@@ -3,13 +3,18 @@ import React, { useEffect, useRef } from 'react';
 import classNames from 'classnames';
 import Button from '../commons/button/Button';
 import Box from '../commons/Box';
-import portrait from '../../images/portrait.jpg'
 import ReactTyped from 'react-typed';
 
-const MainJumbotron = ({handleScrollView, backgroundColor, descColor}) => {
+const MainJumbotron = ({backgroundColor, descColor}) => {
     
 
-  
+    const scrollToSection = () => {
+        const targetElement = document.getElementById("project");
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+    
     return (
         <div className='relative pb-80 pt-32'>
             <div>
@@ -33,21 +38,13 @@ const MainJumbotron = ({handleScrollView, backgroundColor, descColor}) => {
                 >Hey there! I'm a friendly and enthusiastic Frontend Developer who is deeply passionate about learning and growth. If you're curious about me? Check my works! </p>
             </div>
             <div className='my-12'>
-                <Button onClick={handleScrollView} txtColor="text-black"  label='Check the projects' />
+                <Button onClick={scrollToSection} txtColor="text-black"  label='Check the projects' />
             </div>
             <div>
                 <Box backgroundColor={backgroundColor} width="w-[155px]" height="h-[155px]" rotate="rotate-45" right="right-1/3" top="top-40" position="absolute" />
                 <Box width="w-[155px]" height="h-[155px]" borderColor="border-white" rotate="rotate-45" right="right-1/3" top="top-52" position="absolute" border="border-2" />
                 <Box width="w-[300px]" height="h-[300px]" borderColor="border-white" rotate="-rotate-12" right="right-1/4" top="top-80" position="absolute" border="border-2" />
-                <div>
-                    <Image
-                    src={portrait}
-                    width={300}
-                    height={400}
-                    alt="portrait"
-                    className='rotate-12 absolute right-9 top-72'
-                    />
-                </div>
+               
             
             </div>
         </div>

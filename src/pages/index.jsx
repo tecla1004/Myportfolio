@@ -10,13 +10,7 @@ export default function HomePage() {
   
   
 
-  const ref = useRef(null);
-
-  const handleScrollView = () =>{
-    console.log("clicked")
-    ref.current?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-   
-}
+  
   const projectsData = [
     {imgUrl:require("../images/home.png"), title:'Responsive PWA', desc:'Ordering leftover food and reducing food waste', tech:"Vanila JavaScript, Sass, Firebase, HTML"},
     {imgUrl:require("../images/sample.png"), title:'B2B SPA', desc:'Employee engagement application that provides survey and reports', tech:"React, MongoDB, Firebase, AWS, Node.js, Express.js, Tailwind"},
@@ -35,9 +29,9 @@ export default function HomePage() {
       <div className="mx-36 m-auto">
         <Nav />
 
-        <MainJumbotron handleScrollView={handleScrollView} txtColor="text-white" descColor="text-gray" backgroundColor='bg-gradient-to-r from-puple via-darkblue to-skyblue' />
+        <MainJumbotron txtColor="text-white" descColor="text-gray" backgroundColor='bg-gradient-to-r from-puple via-darkblue to-skyblue' />
         <About backgroundColor="bg-gradient-to-r from-puple via-darkblue to-skyblue" histories={histories} />
-        <Cards ref={ref} projectsData={projectsData} />
+        <Cards projectsData={projectsData} />
        
         <Contact />
       </div>
