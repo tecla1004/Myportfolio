@@ -27,7 +27,7 @@ export default function HomePage() {
  
   return (
     <div className='w-full bg-primary text-white'>
-      <div className="mx-36 m-auto">
+      <div className="m-auto">
         <Nav />
         <Fullpage>
           <FullpageNavigation />

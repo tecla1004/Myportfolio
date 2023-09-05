@@ -4,7 +4,7 @@ import portrait from '../../images/portrait.jpg'
 import Image from 'next/image';
 const About = ({backgroundColor, histories, }) => {
     return (
-        <div id='aboutMe' className='py-48 mb-48 relative'>
+        <div id='aboutMe' className='mx-20 pt-20 mb-48 relative'>
             <h3 className='text-4xl mb-10'>About me</h3>
             <div className='flex '>
                 <p className='descFont w-2/3 pr-14'>Hey there! I'm a friendly and enthusiastic Frontend Developer 

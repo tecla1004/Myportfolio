@@ -7,9 +7,9 @@ const Cards = ({projectsData }) => {
 
    
     return (
-        <div id='project'>
+        <div id='project' className='mx-20 pt-20 h-full' >
             <h3 className='text-4xl mb-20'>Projects</h3>
-            <div className='grid grid-cols-3 gap-8 pb-72'>
+            <div className='grid grid-cols-3 gap-8'>
                 {projectsData.map((data, index)=>(
                     <div>
                         <div className='flex flex-col px-1 h-full w-full bg-gradient-to-r py-1 from-puple via-darkblue to-skyblue  hover:scale-105 cursor-pointer transition ease-in-out'>
@@ -45,8 +45,6 @@ const Cards = ({projectsData }) => {
                                         </Link>  
                                     )
                                 }
-
-                                    
                                 </div>
                             </div>
                         </div>

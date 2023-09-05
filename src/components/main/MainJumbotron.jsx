@@ -16,7 +16,7 @@ const MainJumbotron = ({backgroundColor, descColor}) => {
       };
     
     return (
-        <div className='relative pb-80 pt-32'>
+        <div className='mx-20 relative pb-80 pt-32'>
             <div>
                 <h3 className='text-4xl inline-block text-transparent bg-clip-text bg-gradient-to-r from-puple via-darkblue to-skyblue'>Hi, there</h3>
                 <br></br>
