@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage'
 import Nav from '../components/header/Nav';
 import MainJumbotron from '../components/main/MainJumbotron';
 import Cards from '../components/projects/cards';
@@ -24,16 +24,28 @@ export default function HomePage() {
     "ReactJS", "JavaScript", "CSS", "Tailwind", "Html", "MongoDB", "Expres.js", "Node.js"
   ]
 
+ 
   return (
     <div className='w-full bg-primary text-white'>
       <div className="mx-36 m-auto">
         <Nav />
-
-        <MainJumbotron txtColor="text-white" descColor="text-gray" backgroundColor='bg-gradient-to-r from-puple via-darkblue to-skyblue' />
-        <About backgroundColor="bg-gradient-to-r from-puple via-darkblue to-skyblue" histories={histories} />
-        <Cards projectsData={projectsData} />
-       
-        <Contact />
+        <Fullpage>
+          <FullpageNavigation />
+          <FullPageSections>
+            <FullpageSection>
+              <MainJumbotron txtColor="text-white" descColor="text-gray" backgroundColor='bg-gradient-to-r from-puple via-darkblue to-skyblue' />
+            </FullpageSection>
+            <FullpageSection>
+              <About backgroundColor="bg-gradient-to-r from-puple via-darkblue to-skyblue" histories={histories} />
+            </FullpageSection>
+            <FullpageSection>
+              <Cards projectsData={projectsData} />
+            </FullpageSection>
+            <FullpageSection>
+              <Contact />
+            </FullpageSection>
+          </FullPageSections>
+        </Fullpage>
       </div>
     </div>
   );
